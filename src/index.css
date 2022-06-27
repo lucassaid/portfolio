@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  :root {
+    --accent-color: #F5674B;
+  }
+
+  h1 {
+    @apply font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight;
+  }
+
+  h2 {
+    @apply font-bold text-3xl sm:text-4xl lg:text-5xl tracking-tight;
+  }
+
+  h3 {
+    @apply font-bold text-2xl sm:text-3xl lg:text-4xl tracking-tight;
+  }
+
+  h4 {
+    @apply font-semibold text-xl sm:text-2xl lg:text-3xl tracking-tight;
+  }
+
+  h5 {
+    @apply text-lg sm:text-xl lg:text-2xl tracking-tight;
+  }
+
+  button {
+    @apply border rounded border-slate-500 px-2 py-1;
+  }
+
+  a {
+    @apply text-sky-400
+  }
+
+  .overflow-y-auto {
+    overflow-y: auto;
+    @apply scrollbar;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    @apply rounded-sm w-2.5 bg-slate-900/40;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply rounded-sm bg-slate-400/30;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+
+  .container {
+    @apply w-11/12 max-w-7xl mx-auto;
+  }
+
+  .container-small {
+    @apply w-11/12 max-w-4xl mx-auto;
+  }
+
+  .no-highlight {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .gradient-rose {
+    @apply bg-gradient-to-tr from-pink-500 to-orange-400
+  }
+  
+  .gradient-blue {
+    @apply bg-gradient-to-tr from-indigo-500 to-cyan-400
+  }
+
+  .gradient-emerald {
+    @apply bg-gradient-to-tr from-sky-400 to-emerald-400
+  }
+
+  .gradient-green {
+    @apply bg-gradient-to-tr from-teal-400 to-lime-400
+  }
+
+  .gradient-orange {
+    @apply bg-gradient-to-tr from-orange-400 to-yellow-400
+  }
+
+  .gradient-light-gray {
+    @apply bg-gradient-to-tr from-blue-400 to-blue-100
+  }
 }

@@ -1,0 +1,147 @@
+.perspectiveBox {
+  width: 30px;
+  height: 200px;
+  transform-style: preserve-3d;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  left: 30px;
+  --borderColor: rgb(255, 157, 87);
+}
+
+.face {
+  position: absolute;
+  width: 30px;
+  height: 200px;
+  border: 1px solid var(--borderColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.notch {
+  top: 110px;
+  height: 22px;
+  display: block;
+  text-align: center;
+}
+
+.notchTop {
+  transform-origin: center top;
+  transform: rotateX(-35deg) translate3d(0, -25px, 1px);
+}
+
+.notchBottom {
+  transform-origin: center bottom;
+  transform: rotateX(35deg) translate3d(0, 4px, 16px);
+  border-top: none;
+}
+
+.frontHalf {
+  width: 100%;
+  border: 1px solid var(--borderColor);
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.frontHalfTop {
+  height: 91px;
+  border-bottom: none;
+  top: 0;
+}
+
+.frontHalfBottom {
+  height: 75px;
+  border-top: none;
+  bottom: 0;
+}
+
+.faceFront {
+  border: none;
+  transform: translate3d(0, 0, 15px);
+}
+
+.faceLeft {
+  border-right: none;
+  transform: rotateY(-90deg) translate3d(0, 0, 15px);
+}
+
+.faceRight {
+  border-left: none;
+  transform: rotateY(90deg) translate3d(0, 0, 15px);
+}
+
+.faceBack {
+  transform: translate3d(0, 0, -15px);
+}
+
+.camera {
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  opacity: 0.4;
+  border-radius: 50%;
+  margin: 1px auto;
+}
+
+.screen {
+  margin: 0 auto;
+  width: 80%;
+  height: 13px;
+  border: 1px solid var(--borderColor);
+  border-radius: 2px;
+}
+
+.decoLine {
+  height: 1px;
+  background-color: var(--borderColor);
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  opacity: 0.3;
+}
+
+.backDoor {
+  position: absolute;
+  height: 40px;
+  width: 88%;
+  left: 2px;
+  border-radius: 2px;
+  transform-origin: right center;
+  border: 1px solid var(--borderColor);
+}
+
+.backDoorFrame {
+  height: 40px;
+  width: 85%;
+  border: 1px solid var(--borderColor);
+  opacity: 0.3;
+  border-radius: 2px;
+}
+
+.storage {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  left: -19px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.storageContent {
+  display: flex;
+  z-index: 1;
+}
+
+.storageShadow {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(255, 195, 151, 0.833) 10%, rgba(166, 255, 0, 0.15) 40%, rgba(166, 255, 0, 0) 60%);
+}

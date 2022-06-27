@@ -1,0 +1,7 @@
+.event-time {
+  opacity: 0;
+}
+
+.agenda-event:hover .event-time {
+  opacity: 1;
+}
