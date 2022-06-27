@@ -22,9 +22,9 @@ export const Event = ({ title, top, bottom, className, start, end }: EventProps)
   >
     {title}
     <br />
-    <div className="event-time text-sm">
+    <div className="event-time text-xs">
       {format(start, 'HH:mm')}
-      &nbsp; → &nbsp;
+      &nbsp;→&nbsp;
       {format(end, 'HH:mm')}
     </div>
   </div>

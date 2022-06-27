@@ -1,4 +1,4 @@
-import Agenda, { HoursColumn, Day, Needle, Columns } from 'react-headless-agenda'
+import Agenda, { HoursColumn, Day, Columns } from 'react-headless-agenda'
 import { format, addDays, startOfDay, addHours } from 'date-fns'
 import { useState } from 'react'
 import { CaretLeft, CaretRight } from 'phosphor-react'
@@ -15,25 +15,25 @@ export const events = [
     title: 'Study',
     start: addHours(startOfDay(addDays(start, 0)), 3),
     end: addHours(startOfDay(addDays(start, 0)), 10),
-    className: 'bg-emerald-500',
+    className: 'gradient-emerald',
   },
   {
     title: 'work',
     start: startOfDay(addDays(start, 1)),
     end: addHours(startOfDay(addDays(start, 1)), 5),
-    className: 'bg-sky-500',
+    className: 'gradient-blue',
   },
   {
     title: 'Gym',
     start: addHours(startOfDay(addDays(start, 2)), 4),
     end: addHours(startOfDay(addDays(start, 2)), 6),
-    className: 'bg-slate-300',
+    className: 'gradient-light-gray',
   },
   {
     title: 'Travel',
     start: addHours(startOfDay(addDays(start, 2)), 7),
     end: addHours(startOfDay(addDays(start, 2)), 15),
-    className: 'bg-rose-400',
+    className: 'gradient-rose',
   },
 ]
 
@@ -50,7 +50,7 @@ export default function LandingDemo() {
       days={days}
     >
       {({ prev, next, endDate }) => (
-        <div className="relative group md:px-10">
+        <div className="relative group md:max-w-md mx-auto">
           <div className="absolute w-full -top-12 flex justify-center gap-x-5 items-center opacity-0 group-hover:opacity-100 transition-opacity">
             <div className="w-8 h-8 bg-slate-900/30 rounded-full cursor-pointer flex items-center justify-center" onClick={prev}>
               <CaretLeft weight="bold" size={22} />
@@ -65,28 +65,24 @@ export default function LandingDemo() {
             </div>
           </div>
           <div
-            className="grid gap-4 mb-5"
+            className="grid gap-4 overflow-y-hidden"
             style={{
-              gridTemplateColumns: `50px repeat(3, 1fr)`
+              gridTemplateColumns: `50px repeat(3, 1fr)`,
+              maxHeight: 365,
             }}
           >
             <div />
             <Columns>
               {({ date, key }) => (
-                <div key={key} className="text-center">
+                <div key={key} className="text-center transition-opacity opacity-40 group-hover:opacity-60">
                   {format(date, 'ccc d')}
                 </div>
               )}
             </Columns>
-          </div>
-          <div
-            className="grid gap-4 max-h-96 overflow-y-hidden"
-            style={{ gridTemplateColumns: `50px repeat(3, 1fr)` }}
-          >
             <div className="text-center transition-opacity opacity-0 group-hover:opacity-100">
               <HoursColumn>
                 {({ hour }) => (
-                  <div key={hour} className="opacity-30 py-1">
+                  <div key={hour} className="opacity-30 py-1 text-base">
                     {hour} hs
                   </div>
                 )}
@@ -104,14 +100,6 @@ export default function LandingDemo() {
                         // @ts-ignore
                         <Event key={event.title} {...event} top={top} bottom={bottom} />
                       ))}
-                      <Needle>
-                        {({ top }) => (
-                          <div
-                            className="absolute h-1 bg-red-400 z-40 w-full"
-                            style={{ top }}
-                          />
-                        )}
-                      </Needle>
                     </div>
                   )}
                 </Day>
