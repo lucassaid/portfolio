@@ -3,16 +3,19 @@ import { oldProjects } from '../../data/projects/projects'
 
 export default function OldProjects() {
   return (
-    <div className="lg:flex justify-between gap-16 space-y-10 lg:space-y-0">
+    <div className="justify-between grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
       {oldProjects.map(project => (
         <div
           key={project.id}
           className="flex gap-4"
         >
-          <img
-            src={project.image}
-            className="w-16 flex-shrink-0 h-16"
-          />
+          {project.image ? (
+            <img
+              src={project.image}
+              className="w-16 flex-shrink-0 h-16"
+            />
+          ) : null}
+          {project.icon ? project.icon : null}
           <div>
             <h5>
               {project.name}

@@ -3,6 +3,10 @@ import OkNubeLogo from './img/oknube.svg'
 import FlashMeetLogo from './img/flash-meet.svg'
 import RitmoLogo from './img/ritmo.svg'
 import SpaceLogo from './img/space.svg'
+import CisemLogo from './img/cisem.svg'
+import Todo10Logo from './img/todo10.svg'
+import AldiaLogo from './img/aldia.svg'
+import { Student } from 'phosphor-react'
 
 export const mapSlugBackground = {
   spacedev: 'gradient-rose',
@@ -28,11 +32,11 @@ export const projects = [
 
 export const oldProjects = [
   {
-    id: 'amelieJulieta',
-    slug: 'amelie-julieta',
-    name: 'Amelie Julieta',
-    description: 'Courses platform for a client. Her students will buy and watch her courses here.',
-    image: JulietaAmeliaLogo,
+    id: 'cisem',
+    slug: 'cisem',
+    name: 'S.O.S. App',
+    description: 'Project for the government of San Juan, Argentina. Currently being used at 150 points in the city',
+    image: CisemLogo,
   },
   {
     id: 'oknube',
@@ -47,5 +51,30 @@ export const oldProjects = [
     name: 'Flash Meet',
     description: "Personal project. It's an app to make video conferences without leaving the browser.",
     image: FlashMeetLogo,
-  }
+  },
+  {
+    id: 'todo10',
+    slug: 'todo10',
+    name: 'Todo10',
+    description: 'Website for a hosting company. Required not only nice animations but recursive logic also.',
+    image: Todo10Logo,
+  },
+  {
+    id: 'aldia',
+    slug: 'aldia',
+    name: 'Al Día',
+    description: 'Platform to make it easy to check your debts and pay them in installments.',
+    image: AldiaLogo,
+  },
+  {
+    id: 'coursesPlatform',
+    slug: 'courses-platform',
+    name: 'Courses platform',
+    description: 'Courses platform for a client.',
+    icon: (
+      <div className="w-16 flex-shrink-0 h-16 gradient-rose rounded-xl flex items-center justify-center text-white transform rotate-6">
+        <Student size={90} weight="thin" className="relative -bottom-2 -right-2 transform -rotate-6" />
+      </div>
+    ),
+  },
 ]

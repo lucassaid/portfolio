@@ -62,7 +62,7 @@ export const openSourceProjects = [
           <a href="https://www.npmjs.com/package/react-native-cool-speedometer" target="_blank" rel="noreferrer">
             &nbsp;React Native&nbsp;
           </a>
-          version with some downloads already, (with some
+          version with some downloads already, (and some
           <a href="https://github.com/lucassaid/react-native-cool-speedometer/issues/11#issue-1212963751" target="_blank" rel="noreferrer">
             &nbsp;good feedback&nbsp;
           </a>

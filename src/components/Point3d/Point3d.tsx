@@ -34,7 +34,7 @@ export default function Point3d({
 
   useEffect(() => {
     const controls = animate(rY, rotateY, {
-      duration: 1.4
+      duration: 1.2
     })
     return controls.stop
   }, [rotateY, rY])

@@ -6,6 +6,7 @@ import CurrentProjects from './CurrentProjects'
 import { strings } from '../../data/strings'
 import Point3dDemo from '../../components/Point3d/Point3dDemo'
 import CreditCardDemo from '../../components/CreditCard/CreditCardDemo'
+import Tools from './Tools'
 
 export default function HomeScreen() {
 
@@ -49,6 +50,17 @@ export default function HomeScreen() {
           Previous projects
         </h2>
         <OldProjects />
+        <div className="h-20" />
+        <div className="space-y-3">
+          <h2 className="">
+            Tech I&apos;m used to
+          </h2>
+          <p>
+            Click on each one to see more details
+          </p>
+          <div className="h-3" />
+          <Tools />
+        </div>
       </div>
       <div className="h-20" />
       <div className="h-10" />
@@ -65,7 +77,7 @@ export default function HomeScreen() {
             <CompassDemo />
           </div>
           <div className="md:w-7/12">
-            <h2>
+            <h2 className="mb-4">
               About me
             </h2>
             {strings.aboutMe}

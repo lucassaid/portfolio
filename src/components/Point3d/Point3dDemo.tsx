@@ -9,7 +9,10 @@ export default function Point3dDemo() {
   const [aidKitOutside, setAidKitOutside] = useState(false)
 
   return (
-    <div>
+    <div
+      onMouseEnter={() => setRotation(160)}
+      onMouseLeave={() => setRotation(-40)}
+    >
       <motion.div
         className="relative"
         onViewportEnter={() => setRotation(-40)}
@@ -17,7 +20,7 @@ export default function Point3dDemo() {
         viewport={{ amount: 'all' }}
       >
         <div
-          className="bg-gradient-to-br from-teal-400  to-lime-500 absolute h-full left-0 top-0 z-40"
+          className="gradient-green absolute h-full left-0 top-0 z-40"
           style={{
             mixBlendMode: 'plus-lighter',
             width: 176,
@@ -31,42 +34,27 @@ export default function Point3dDemo() {
           backDoorOpened={storageOpened}
           storageVisible={aidKitOutside}
         />
-      </motion.div>
-      <div className="h-24" />
-      <input
-        type="range"
-        min={-30}
-        max={160}
-        value={rotation}
-        onChange={e => setRotation(Number(e.target.value))}
-      />
-      <div className="mb-3 mt-1">
-        {rotation > 130 ? (
-          <>
-            <button
-              onClick={() => {
-                if (!storageOpened) {
-                  setStorageOpened(true)
-                  setTimeout(() => {
-                    setAidKitOutside(true)
-                  }, 150)
-                } else {
-                  setAidKitOutside(false)
-                  setTimeout(() => {
-                    setStorageOpened(false)
-                  }, 200)
-                }
-              }}
-            >
-              {storageOpened ? 'Close storage' : 'Open storage'}
-            </button>
-          </>
-        ) : (
-          <button onClick={() => setRotation(160)}>
-            Turn around this weird thing
+        {rotation > 130 && (
+          <button
+            className="absolute z-50 whitespace-nowrap -left-36 bottom-2 border-slate-900"
+            onClick={() => {
+              if (!storageOpened) {
+                setStorageOpened(true)
+                setTimeout(() => {
+                  setAidKitOutside(true)
+                }, 150)
+              } else {
+                setAidKitOutside(false)
+                setTimeout(() => {
+                  setStorageOpened(false)
+                }, 200)
+              }
+            }}
+          >
+            {storageOpened ? 'Close storage' : 'Open storage'}
           </button>
         )}
-      </div>
+      </motion.div>
     </div>
   )
 }
