@@ -17,7 +17,7 @@ export const openSourceProjects = [
     description: (
       <>
         <p>First-in-class agenda component for React. I provide all the functionality, markup and styles are up to you 😎</p>
-        <p>Currently being used on production at <Link to="/project/ritmo">Ritmo</Link>, and I recently published it on NPM. Check out more:</p>
+        <p>Currently being used in production at <Link to="/project/ritmo">Ritmo</Link>, and I recently published it on NPM. Check out more:</p>
         <CodeLinks
           github="https://github.com/lucassaid/react-headless-agenda"
           npm="https://npmjs.com/react-headless-agenda"
@@ -40,7 +40,7 @@ export const openSourceProjects = [
           All markup and styles up to you (c&apos;mon it takes you 5 minutes using tailwind!)
         </p>
         <p>
-          Currently being used on production in a chat app.
+          Currently being used in production in a chat app.
         </p>
       </>
     ),

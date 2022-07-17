@@ -5,7 +5,7 @@ type ConfigProps = 'angle' | 'rotation' | 'value' | 'min' | 'max'
 type MinAndMax = Pick<SpeedometerProps, 'min' | 'max'>
 type Config = { key: ConfigProps, props: MinAndMax }[]
 
-const getConfig = ({ min = 0, max = 180 }: SpeedometerProps): Config => [
+const getConfig = ({ min = 0, max = 180 }: Omit<SpeedometerProps, 'children'>): Config => [
   { key: 'angle', props: { min: 100, max: 360 } },
   { key: 'rotation', props: { min: -360, max: 0 } },
   { key: 'value', props: { min: Math.max(-50, min), max: Math.min(300, max) } },
@@ -14,8 +14,8 @@ const getConfig = ({ min = 0, max = 180 }: SpeedometerProps): Config => [
 ]
 
 interface ValuesSetterProps {
-  values: SpeedometerProps
-  setValues: Dispatch<SetStateAction<SpeedometerProps>>
+  values: Omit<SpeedometerProps, 'children'>
+  setValues: Dispatch<SetStateAction<Omit<SpeedometerProps, 'children'>>>
 }
 
 export default function ValuesSetter({

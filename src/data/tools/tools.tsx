@@ -30,10 +30,10 @@ export const tools = [
         </p>
         <ul className="list-disc ml-4">
           <li>
-            10 React apps started from scratch and currently on production
+            10 React apps started from scratch and currently in production
           </li>
           <li>
-            3 React Apps on production maintained as a team member at SpaceDev, along with some other projects I pitch in to help
+            3 React Apps in production maintained as a team member at SpaceDev, along with some other projects I pitch in to help
           </li>
           <li>
             5 personal or client projects that never got to production
@@ -82,7 +82,7 @@ export const tools = [
     icon: next,
     detail: (
       <p>
-        I started learning React with Next.js and made around 10 projects with it, 7 of them currently on production.
+        I started learning React with Next.js and made around 10 projects with it, 7 of them currently in production.
         Lately I&apos;m using CRA mostly because I really like React Router and SWR.
       </p>
     )

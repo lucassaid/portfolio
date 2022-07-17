@@ -5,7 +5,6 @@ import OldProjects from './OldProjects'
 import CurrentProjects from './CurrentProjects'
 import { strings } from '../../data/strings'
 import Point3dDemo from '../../components/Point3d/Point3dDemo'
-import CreditCardDemo from '../../components/CreditCard/CreditCardDemo'
 import Tools from './Tools'
 import { motion } from 'framer-motion'
 import { useEffect, useRef } from 'react'
@@ -34,13 +33,11 @@ export default function HomeScreen() {
   const scrollTrack = useRef(0)
 
   useEffect(() => {
-    console.log(scrollTrack.current)
     if (scrollTrack.current) {
       window.scroll(0, scrollTrack.current)
     }
     const handleScroll = () => {
       scrollTrack.current = window.scrollY
-      console.log(scrollTrack.current)
     }
     window.addEventListener('scroll', handleScroll)
     return () => {

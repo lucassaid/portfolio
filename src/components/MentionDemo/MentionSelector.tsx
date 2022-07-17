@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react'
-// import Avatar from '../Avatar'
 
 interface MentionSelectorProps {
   users: { username: string, highlighted: boolean }[]

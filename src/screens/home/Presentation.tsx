@@ -1,18 +1,17 @@
 import CreditCardDemo from '../../components/CreditCard/CreditCardDemo'
-import Point3dDemo from '../../components/Point3d/Point3dDemo'
 import profileImage from './profile.jpg'
 
 export default function Presentation() {
 
   return (
     <div className="relative">
-      <div className="flex items-center space-x-10">
+      <div className="md:flex items-center md:space-x-10">
         <img
           className="w-36 aspect-square rounded-full"
           src={profileImage}
           alt="Lucas Said Portfolio"
         />
-        <div>
+        <div className="mt-4 md:mt-0">
           <h2 className="decoration-sky-500 decoration-wavy underline-offset-8">
             Lucas Said
           </h2>
@@ -21,6 +20,7 @@ export default function Presentation() {
           </p>
         </div>
       </div>
+      <hr className="md:hidden mt-10" />
       <div className="h-10" />
       <div className="space-y-3 max-w-5xl">
         <p>
