@@ -7,9 +7,11 @@ The government of San Juan, Argentina implemented in 2020 a security system call
 
 ![cisem](/images/cisem_totem_2.jpeg)
 
+<br>
+
 ## The S.O.S app
 
-Each totem has a touchable screen with an "S.O.S App", which is a React app, connected vía socket.io to a raspberry inside the totem. Using the app, a user can call the 911, see relevant information like nearby hospitals, and even request for a first aid box placed in the back the totem.
+Each totem has a touchable screen with an "S.O.S App", which is a React app, connected vía socket.io to a raspberry inside the totem. Using the app, a user can call 911, see relevant information like nearby hospitals, and even request for a first aid box placed in the back of the totem.
 
 This app is currently being used at the 150 totems placed in the province.
 
@@ -19,6 +21,7 @@ This app is currently being used at the 150 totems placed in the province.
   </video>
 </figure>
 
+<br>
 
 ## Tools used:
 

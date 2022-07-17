@@ -8,6 +8,7 @@ import Point3dDemo from '../../components/Point3d/Point3dDemo'
 import CreditCardDemo from '../../components/CreditCard/CreditCardDemo'
 import Tools from './Tools'
 import { motion } from 'framer-motion'
+import { useEffect, useRef } from 'react'
 
 const leftForm = (
   <motion.div
@@ -29,6 +30,24 @@ const leftForm = (
 )
 
 export default function HomeScreen() {
+
+  const scrollTrack = useRef(0)
+
+  useEffect(() => {
+    console.log(scrollTrack.current)
+    if (scrollTrack.current) {
+      window.scroll(0, scrollTrack.current)
+    }
+    const handleScroll = () => {
+      scrollTrack.current = window.scrollY
+      console.log(scrollTrack.current)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <div className="relative overflow-hidden">
       <div className="h-20" />

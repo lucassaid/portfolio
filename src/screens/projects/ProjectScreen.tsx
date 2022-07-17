@@ -14,12 +14,9 @@ export default function ProjectScreen() {
 
   const { data } = useSWR(`/projects/${slug}.md`, articleFetcher)
 
-  // useEffect(() => {
-  //   console.log('EFFECT')
-  //   setTimeout(() => {
-  //     window.scroll(0, 0)
-  //   }, 100)
-  // }, [slug])
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [slug])
 
   if (!data || !slug) return null
 

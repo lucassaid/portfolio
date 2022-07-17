@@ -30,11 +30,7 @@ export default function Presentation() {
         <p>
           I work as a full stack developer, but lately I&apos;m focusing on <b>frontend development</b>, improving my skills
           and keep specializing in what I&apos;m good at: Draft quality, composable components,
-          and build great user interfaces.
-        </p>
-        <p>
-          I still know backend development with Node, MongoDB, Redis, SQL, Firebase, and so on...
-          But I think it&apos;s better to be really good.
+          and building great user interfaces.
         </p>
       </div>
       <div className="absolute hidden lg:block -top-10 xl:top-20 -right-12 xl:-right-36 transform scale-110 -rotate-6">

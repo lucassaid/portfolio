@@ -23,7 +23,7 @@ export default function MentionSelector({ users, onUserClicked }: MentionSelecto
   return (
     <div
       ref={containerRef}
-      className="py-1 rounded-md bg-blue-200 mb-1 absolute max-h-64 overflow-y-auto z-40 shadow-lg text-slate-700 w-32"
+      className="py-1 rounded-md bg-blue-200 mb-1 absolute max-h-48 overflow-y-auto z-40 shadow-lg text-slate-700 w-32 bottom-10"
       data-testid="mention-selector"
     >
       {users.map((user, i) => (

@@ -54,23 +54,23 @@ export const oldProjects = [
   },
   {
     id: 'todo10',
-    slug: 'todo10',
     name: 'Todo10',
-    description: 'Website for a hosting company. Required not only nice animations but recursive component also.',
+    url: 'https://todo10.com/en',
+    description: 'Website for a hosting company. It has nice animations and recursive logic also. (article coming soon)',
     image: Todo10Logo,
   },
   {
     id: 'aldia',
-    slug: 'aldia',
     name: 'Al Día',
-    description: 'Platform to make it easy to check your debts and pay them in installments.',
+    url: 'http://aldia.com.ar/',
+    description: 'Platform to make it easy to check your debts and pay them in installments. (Article coming soon)',
     image: AldiaLogo,
   },
   {
     id: 'coursesPlatform',
     slug: 'courses-platform',
     name: 'Courses platform',
-    description: 'Courses platform for a client.',
+    description: 'Courses platform for a client. I created the homepage and a clean interface to manage courses and lessons.',
     icon: (
       <div className="w-16 flex-shrink-0 h-16 gradient-rose rounded-xl flex items-center justify-center text-white transform rotate-6">
         <Student size={90} weight="thin" className="relative -bottom-2 -right-2 transform -rotate-6" />

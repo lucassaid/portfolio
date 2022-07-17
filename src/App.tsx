@@ -6,8 +6,6 @@ import ProjectScreen from './screens/projects/ProjectScreen'
 import Layout from './components/Layout'
 
 export default function App() {
-
-  useEffect(() => { console.log('QUEEE') }, [])
   return (
     <>
       <Routes>

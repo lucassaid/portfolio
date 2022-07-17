@@ -22,12 +22,23 @@ export default function OldProjects() {
             </h5>
             {project.description}
             <div>
-              <Link
-                to={`/project/${project.slug}`}
-                className="text-accent"
-              >
-                See more →
-              </Link>
+              {project.slug ? (
+                <Link
+                  to={`/project/${project.slug}`}
+                  target=""
+                  className="text-accent"
+                >
+                  See more →
+                </Link>
+              ) : (
+                <a
+                  target="_blank"
+                  href={project.url}
+                  rel="noreferrer"
+                >
+                  See website →
+                </a>
+              )}
             </div>
           </div>
         </div>

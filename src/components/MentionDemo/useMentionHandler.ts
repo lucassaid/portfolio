@@ -30,7 +30,7 @@ export default function useMentionHandler(users: User[]) {
 
   const usersToMention = useMemo(() => {
     return users
-      .filter(({ username }) => username.includes(filterText))
+      .filter(({ username }) => username.toLocaleLowerCase().startsWith(filterText.toLocaleLowerCase()))
       .sort((a, b) => a.username.localeCompare(b.username))
       .map((user, index) => ({ ...user, highlighted: highlightIndex == index }))
   }, [users, filterText, highlightIndex])

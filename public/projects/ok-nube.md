@@ -55,6 +55,6 @@ The admin was the first app we started to develop, it is made out of Polymer 2.
 
 Here you customize the store and set up the configuration needed for the business. You can add your products, manage orders, and interact with the customers by chatting with them before and after the purchase. 
 
-In this app I make most of the frontend work that is required. Despite it, I sometimes make backend APIs, or try to fix some to see where that 500 error is coming from 😅.
+In this app I made most of the frontend work that was required. Despite it, I also worked on the creation and maintenance of our backend APIs.
 
-In this project I learned backend things like Node with Express, Socket.io, Google Pub/Sub, and a few more.
+In this startup I learned backend things like Node with Express, Socket.io, Google Pub/Sub, and a few more.

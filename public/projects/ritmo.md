@@ -1,6 +1,6 @@
 ---
 title: 'My work at Ritmo'
-date: '2020-09-06'
+date: '2022-07-10'
 ---
 
 Ritmo is a sound branding startup from Argentina focused on improve the consumer experience at each point of sale of our clients. We carefully choose the music that best represent a brand, and provide them with the necessary hardware and software to play it.

@@ -97,6 +97,6 @@
   }
 
   .article ul {
-    @apply list-disc;
+    @apply list-disc ml-6;
   }
 }

@@ -15,7 +15,37 @@ export default function MentionDemo() {
     addMention,
     inputProps,
     inputRef,
-  } = useMentionHandler([{ username: 'lucas' }, { username: 'toshi' }, { username: 'chiki' }])
+  } = useMentionHandler([
+    { username: 'Lucas' },
+    { username: 'John' },
+    { username: 'Chris' },
+    { username: 'Sarah' },
+    { username: 'Demi' },
+    { username: 'Bret' },
+    { username: 'Maynard' },
+    { username: 'Marianne' },
+    { username: 'Laila' },
+    { username: 'Wesley' },
+    { username: 'Jett' },
+    { username: 'Hailie' },
+    { username: 'Toby' },
+    { username: 'Simon' },
+    { username: 'Christopher' },
+    { username: 'Lindsey' },
+    { username: 'Joyce' },
+    { username: 'Ruby' },
+    { username: 'Nelson' },
+    { username: 'Regina' },
+    { username: 'Milo' },
+    { username: 'Richard' },
+    { username: 'Luke' },
+    { username: 'Yancy' },
+    { username: 'Mack' },
+    { username: 'Abel' },
+    { username: 'Nichole' },
+    { username: 'Peace' },
+    { username: 'Kiley' },
+  ])
 
   useEffect(() => {
     if (inView) {
@@ -32,9 +62,9 @@ export default function MentionDemo() {
     <motion.div
       key="mention"
       transition={{ type: 'tween' }}
-      exit={{ y: -100, opacity: 0 }}
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: -120, opacity: 1 }}
+      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
     >
       <MentionSelector
         users={usersToMention}
@@ -47,7 +77,7 @@ export default function MentionDemo() {
     <div className="flex justify-center" >
       <div className="relative top-10" ref={ref}>
         <AnimatePresence>
-          {(mentioning) && mentionSelector}
+          {mentioning && mentionSelector}
         </AnimatePresence>
         {/* @ts-ignore */}
         <input

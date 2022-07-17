@@ -18,7 +18,7 @@ const smallScreen = screen.width < 768
 export default function SpeedometerDemo() {
 
   const [items, setItems] = useState(initialState)
-  const [values, setValues] = useState<SpeedometerProps>({
+  const [values, setValues] = useState<Partial<SpeedometerProps>>({
     value: 128,
     width: smallScreen ? 200 : 250,
     angle: 250,

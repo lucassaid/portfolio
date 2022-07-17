@@ -15,7 +15,7 @@ const getConfig = ({ min = 0, max = 180 }: SpeedometerProps): Config => [
 
 interface ValuesSetterProps {
   values: SpeedometerProps
-  setValues: Dispatch<SetStateAction<SpeedometerProps>>
+  setValues: Dispatch<SetStateAction<Partial<SpeedometerProps>>>
 }
 
 export default function ValuesSetter({
