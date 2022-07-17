@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import HomeScreen from './screens/home/HomeScreen'
 import { Toaster } from 'react-hot-toast'
-import { useEffect } from 'react'
 import ProjectScreen from './screens/projects/ProjectScreen'
 import Layout from './components/Layout'
 

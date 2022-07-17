@@ -28,8 +28,8 @@ export default function Presentation() {
           facing the development with passion and creativity. I love to bring new ideas to the projects I work on.
         </p>
         <p>
-          I work as a full stack developer, but lately I&apos;m focusing on <b>frontend development</b>, improving my skills
-          and keep specializing in what I&apos;m good at: Draft quality, composable components,
+          I&apos;ve worked as a full stack developer for around 6 years now, but lately I&apos;m focusing on <b>frontend development</b>.
+          I&apos;m improving my skills and specializing in what I&apos;m good at: Draft quality, composable components,
           and building great user interfaces.
         </p>
       </div>
