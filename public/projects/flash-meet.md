@@ -11,7 +11,7 @@ Here I show some of the features I wanted to add and how I did it:
 
 <br>
 
-### No login, but secure
+## No login, but secure
 <figure class="video_container" style="width: 100%; max-width: 550px; margin: 20px 0;">
   <video muted="true" autoplay="true" loop style="width: 100%; border-radius: 5px;">
     <source src="/videos/flash-meet.mp4" type="video/mp4">
@@ -22,7 +22,7 @@ My non-negotiable idea was "I want the user to create a room chat as soon as he 
 
 <br>
 
-### Video calls with WebRTC
+## Video calls with WebRTC
 <div style="display: flex; align-items:center;">
   <img src="/images/logos/webrtc.svg" style="width: 100px">
   <div style="margin: 0 20px; font-size: 2.5rem;">+</div>
@@ -33,7 +33,7 @@ This is probably the great challenge of the app. [WebRTC](https://webrtc.org/) i
 
 <br>
 
-### Custom server and security
+## Custom server and security
 <figure class="video_container" style="width: 100%; max-width: 550px; margin: 20px 0;">
   <video muted="true" autoplay="true" loop style="width: 100%; border-radius: 5px;">
     <source src="/videos/flash-meet-security.mp4" type="video/mp4">
@@ -46,6 +46,6 @@ All the connection with the frontend is made with Socket.io, making it easy to l
 
 <br>
 
-### More (was) coming soon
+## More (was) coming soon
 
 I was working to make the app more stable and compatible, to add features such as polls, screen sharing and file sharing. But, since apps like google meet already had everything I was trying to accomplish, I decided to abandon the project. So long Flash, you'll never get to beat your rival Zoom 👊. (If you haven't seen the tv shows or the comics please ignore this bad joke and forgive me)

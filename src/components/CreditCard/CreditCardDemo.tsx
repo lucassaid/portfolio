@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import CreditCard from './CreditCard'
 import useTyped from './useTyped'
 
@@ -12,6 +12,7 @@ export default function CreditCardDemo() {
   const [flipped, setFlipped] = useState(false)
   const { text: number, play, reset, isFinished } = useTyped(completeNumber, 120)
   const { text: code, play: playCode, reset: resetCode, isFinished: finishedCode } = useTyped(completeCode)
+  const mounted = useRef(false)
 
   useEffect(() => {
     const flip = async () => {
@@ -39,18 +40,19 @@ export default function CreditCardDemo() {
     }
   }, [finishedCode, play])
 
+  useEffect(() => {
+    if (mounted.current) return
+    mounted.current = true
+    play()
+  }, [play])
+
   return (
-    <div>
-      <CreditCard
-        number={number}
-        flipped={flipped}
-        name="Lucas Said"
-        vDate="06/30"
-        code={code}
-      />
-      <button onClick={play}>
-        p
-      </button>
-    </div>
+    <CreditCard
+      number={number}
+      flipped={flipped}
+      name="Lucas Said"
+      vDate="06/30"
+      code={code}
+    />
   )
 }

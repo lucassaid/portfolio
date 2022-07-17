@@ -56,7 +56,7 @@ export const oldProjects = [
     id: 'todo10',
     slug: 'todo10',
     name: 'Todo10',
-    description: 'Website for a hosting company. Required not only nice animations but recursive logic also.',
+    description: 'Website for a hosting company. Required not only nice animations but recursive component also.',
     image: Todo10Logo,
   },
   {

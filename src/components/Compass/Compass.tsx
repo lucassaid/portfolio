@@ -15,7 +15,7 @@ interface CompassProps {
   north?: number
 }
 
-export default function Compass({ size = 140, xAngle = 29, north = 0 }: CompassProps) {
+export default function Compass({ size = 140, xAngle = 45, north = 0 }: CompassProps) {
 
   const points = [
     { key: 'north', label: cardinalPoints.north, style: { top: '-30px' } },

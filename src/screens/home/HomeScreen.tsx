@@ -7,40 +7,37 @@ import { strings } from '../../data/strings'
 import Point3dDemo from '../../components/Point3d/Point3dDemo'
 import CreditCardDemo from '../../components/CreditCard/CreditCardDemo'
 import Tools from './Tools'
+import { motion } from 'framer-motion'
+
+const leftForm = (
+  <motion.div
+    className={`
+      gradient-orange absolute h-20 w-20 -left-10 top-[500px] z-40 rounded-lg
+      hidden 2xl:block
+    `}
+    style={{
+      scale: 3,
+    }}
+    animate={{
+      rotate: [30, 120, 30],
+    }}
+    transition={{
+      repeat: Infinity,
+      duration: 30
+    }}
+  />
+)
 
 export default function HomeScreen() {
-
   return (
-    <div>
+    <div className="relative overflow-hidden">
       <div className="h-20" />
-      <div className="h-20" />
-      <div className="container bg-gradient-to-tr from-amber-600 bg-pink-700">
-        <div className="h-20" />
-        <div className="h-20" />
-        <div className="h-20" />
-        <div className="h-20" />
-      </div>
-      <div className="h-20" />
-      <div className="h-20" />
-      <div className="h-20" />
-      <div className="h-20" />
-
-      <div className="container flex justify-around">
+      <div className="container">
         <Presentation />
       </div>
       <div className="h-20" />
-      <div className="h-20" />
-      <div className="h-20" />
-      <div className="container flex justify-around">
-        {/* <div className="p-20 bg-slate-900 rounded-lg inline-flex"> */}
-        <Point3dDemo />
-        <CompassDemo />
-        <CreditCardDemo />
-        {/* </div> */}
-      </div>
-      <div className="h-20" />
-      <div className="h-20" />
-      <div className="container">
+      {leftForm}
+      <div className="container relative">
         <h2 className="mb-10">
           What I&apos;m working on
         </h2>
@@ -56,10 +53,13 @@ export default function HomeScreen() {
             Tech I&apos;m used to
           </h2>
           <p>
-            Click on each one to see more details
+            Hover or tap on each one to see more details.
           </p>
           <div className="h-3" />
           <Tools />
+        </div>
+        <div className="absolute top-72 -right-44 hidden 2xl:block">
+          <Point3dDemo />
         </div>
       </div>
       <div className="h-20" />

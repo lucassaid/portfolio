@@ -68,6 +68,10 @@
     -webkit-tap-highlight-color: transparent;
   }
 
+  .gradient-space {
+    @apply bg-gradient-to-tr from-blue-900 to-purple-800
+  }
+
   .gradient-rose {
     @apply bg-gradient-to-tr from-pink-500 to-orange-400
   }
@@ -90,5 +94,9 @@
 
   .gradient-light-gray {
     @apply bg-gradient-to-tr from-blue-400 to-blue-100
+  }
+
+  .article ul {
+    @apply list-disc;
   }
 }
