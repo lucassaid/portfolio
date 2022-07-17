@@ -79,34 +79,34 @@ export default function SpeedometerDemo() {
       {sliders}
       <div className="">
         <Speedometer {...values}>
-          {items.background && (
+          {items.background ? (
             <Background
               angle={backgroundAngle}
               opacity={0.2}
             />
-          )}
-          {items.arc && (
+          ) : <></>}
+          {items.arc ? (
             <Arc opacity={0.7} />
-          )}
-          {items.needle && (
+          ) : <></>}
+          {items.needle ? (
             <Needle />
-          )}
-          {items.progress && (
+          ) : <></>}
+          {items.progress ? (
             <Progress />
-          )}
-          {items.marks && (
+          ) : <></>}
+          {items.marks ? (
             <Marks
               step={marksStep}
               numbersRadius={smallScreen ? 18 : 20}
               fontSize={smallScreen ? 14 : 18}
             />
-          )}
-          {items.indicator && (
+          ) : <></>}
+          {items.indicator ? (
             <Indicator fontSize={smallScreen ? 35 : 45} />
-          )}
-          {items.danger && (
+          ) : <></>}
+          {items.danger ? (
             <DangerPath />
-          )}
+          ) : <></>}
         </Speedometer>
       </div>
       {checkboxes}
