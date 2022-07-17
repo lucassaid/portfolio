@@ -6,6 +6,7 @@ export enum infoKeys {
 export interface ProjectInfo {
   title: string
   date: string
+  logo: string
 }
 
 export const parseFrontMatter = (str: string) => {

@@ -1,6 +1,7 @@
 ---
 title: 'Personal project: Flash Meet'
 date: '2020-09-05'
+logo: '/images/project-logos/flash-meet.svg'
 ---
 
 The motivation for this project was to make an easy to use video conference web app. My goal is to use all the advantages of the modern web to achieve that no one has to download anything. Just the Web.

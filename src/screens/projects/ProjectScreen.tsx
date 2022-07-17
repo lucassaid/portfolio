@@ -5,7 +5,10 @@ import { articleFetcher } from '../../lib/fetcher'
 
 export const mapSlugBackground = {
   spacedev: 'gradient-space',
-  ritmo: 'gradient-blue'
+  ritmo: 'gradient-emerald',
+  cisem: 'gradient-light-gray',
+  'ok-nube': 'gradient-rose',
+  'flash-meet': 'gradient-blue',
 }
 
 export default function ProjectScreen() {
@@ -39,6 +42,10 @@ export default function ProjectScreen() {
             <div className="h-10" />
             <div className="h-10" />
             <div className="h-10" />
+            {data.info.logo ? (
+              <img src={data.info.logo} className="w-20 aspect-square" />
+            ) : null}
+            <div className="h-5" />
             <h2>
               {data.info.title}
             </h2>

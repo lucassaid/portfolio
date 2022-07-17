@@ -1,6 +1,7 @@
 ---
 title: 'My work at SpaceDev'
 date: '2022-07-16'
+logo: '/images/project-logos/space.svg'
 ---
 
 ![space_team](/images/space_team.png)

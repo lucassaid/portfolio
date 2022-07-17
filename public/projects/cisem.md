@@ -1,6 +1,7 @@
 ---
 title: 'S.O.S App'
 date: '2020-09-06'
+logo: '/images/project-logos/cisem.svg'
 ---
 
 The government of San Juan, Argentina implemented in 2020 a security system called "Safe zones". These are "totems" that allow direct communication with the police, have relevant information for emergencies, and more. They placed these safe zones in different points of the city, and nearby roads. 

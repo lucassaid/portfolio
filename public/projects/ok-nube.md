@@ -1,6 +1,7 @@
 ---
 title: 'My work at OkNube'
 date: '2020-09-04'
+logo: '/images/project-logos/oknube.svg'
 ---
 
 OkNube was a small startup I worked on from 2017 to the end of 2020. The idea of the project was to make it easy for all people to sell over the internet, and also bring the clients to them. Our goal was to set up a "marketplace" in some cities, and let the stores of that city sell and compete.
