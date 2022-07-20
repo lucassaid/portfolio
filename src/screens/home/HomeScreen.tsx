@@ -12,7 +12,7 @@ import { useEffect, useRef } from 'react'
 const leftForm = (
   <motion.div
     className={`
-      gradient-orange absolute h-20 w-20 -left-10 top-[500px] z-40 rounded-lg
+      gradient-orange absolute h-20 w-20 -left-10 top-[500px] -z-40 rounded-lg
       hidden 2xl:block
     `}
     style={{
