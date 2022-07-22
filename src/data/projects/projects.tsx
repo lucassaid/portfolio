@@ -42,7 +42,7 @@ export const oldProjects = [
     id: 'oknube',
     slug: 'ok-nube',
     name: 'OkNube',
-    description: "Startup I'm working in. It's a platform where you can make an online store in minutes.",
+    description: "Startup I worked on for three years. It's a platform where you can make an online store in minutes.",
     image: OkNubeLogo,
   },
   {
