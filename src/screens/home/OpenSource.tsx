@@ -10,7 +10,6 @@ export default function OpenSourceProjects() {
         </h2>
         <p className="max-w-3xl mx-auto">
           Some components and libraries I made for the projects I worked on, and I wanted to share with the community.
-          Some of them aren&apos;t ready for production, I&apos;m in the process of polishing them.
           The motivation for all of these was that I couldn&apos;t find something similar, so I think they have something new to offer.
         </p>
         <p>

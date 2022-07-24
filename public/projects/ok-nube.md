@@ -19,7 +19,7 @@ In the time working on the project I've learned a lot and grew up as a developer
 
 Some of the tools used: [LitELement](https://lit-element.polymer-project.org/), Redux, Firebase, Node
 
-LitElement was a great tool to make this frontend thanks to its easy use and seamless integration with Redux. The use of redux with the [reselect](https://github.com/reduxjs/reselect) library was a life saver as it made it kind of easy to manage complex logic (like select options of a variable product) with legible, performant and maintainable code. As shown in the video above, the user can choose the color and the material of the product, and see the changes in the price and stock. He can also see what version of the product is out of stock.
+LitElement was a great tool to make this frontend thanks to its easy use and seamless integration with Redux. The use of redux with the [reselect](https://github.com/reduxjs/reselect) library was a life saver as it made it kind of easy to manage complex logic with legible, performant and maintainable code. As shown in the video above, the user can choose the color and the material of the product, and see the changes in the price and stock. He can also see what version of the product is out of stock.
 
 In some other points of the app I used [re-reselect](https://github.com/toomuchdesign/re-reselect) to reuse some selectors logic. I've also made some works in the backend with Express and Socket.io.
 
