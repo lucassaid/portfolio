@@ -16,7 +16,7 @@ export default function Presentation() {
             Lucas Said
           </h2>
           <p className="max-w-md mt-2">
-            Web developer from Argentina, in the mission of writing code that looks good and runs fast.
+            Web developer from Argentina (living in Uruguay), in the mission of writing code that looks good and runs fast.
           </p>
         </div>
       </div>
