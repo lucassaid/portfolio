@@ -4,7 +4,6 @@ export interface User {
   username: string,
 }
 
-
 function findCurrentWord(input: HTMLInputElement) {
   let count = 0
   if (!input.selectionEnd) return ''

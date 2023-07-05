@@ -15,6 +15,8 @@ import framerMotion from './img/framer-motion.png'
 import storybook from './img/storybook.svg'
 import swr from './img/swr.svg'
 import testingLibrary from './img/testing-library.svg'
+import sentry from './img/sentry.svg'
+import aws from './img/aws.svg'
 
 export const tools = [
   {
@@ -121,14 +123,9 @@ export const tools = [
     )
   },
   {
-    id: 'firebase',
-    title: 'Firebase',
-    icon: firebase,
-    detail: (
-      <p>
-        I used most of the Firebase products along my career. I have the most experience with Firestore, Authentication, and Cloud Messaging.
-      </p>
-    )
+    id: 'redux',
+    title: 'Redux',
+    icon: redux,
   },
   {
     id: 'nextjs',
@@ -142,35 +139,51 @@ export const tools = [
     )
   },
   {
-    id: 'cra',
-    title: 'Create React App',
-    icon: cra,
+    id: 'firebase',
+    title: 'Firebase',
+    icon: firebase,
     detail: (
       <p>
-        Main React framework I use lately. I worked on around 9 projects using it, 5 of them from scratch to production.
+        I used most of the Firebase products along my career. I have the most experience with Firestore, Authentication, and Cloud Messaging.
       </p>
     )
   },
   {
-    id: 'express',
-    title: 'Express',
-    icon: express,
+    id: 'sentry',
+    title: 'Sentry',
+    icon: sentry,
   },
+  // {
+  //   id: 'cra',
+  //   title: 'Create React App',
+  //   icon: cra,
+  //   detail: (
+  //     <p>
+  //       Main React framework I use lately. I worked on around 9 projects using it, 5 of them from scratch to production.
+  //     </p>
+  //   )
+  // },
+  // {
+  //   id: 'express',
+  //   title: 'Express',
+  //   icon: express,
+  // },
   {
     id: 'socketio',
     title: 'Socket.io',
     icon: socketio,
   },
-  {
-    id: 'redux',
-    title: 'Redux',
-    icon: redux,
-  },
+
   // {
   //   id: 'reactRouter',
   //   title: 'React Router',
   //   icon: reactRouter,
   // },
+  {
+    id: 'aws',
+    title: 'AWS',
+    icon: aws,
+  },
   {
     id: 'mongodb',
     title: 'MongoDB',
