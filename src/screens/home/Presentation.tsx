@@ -24,12 +24,12 @@ export default function Presentation() {
       <div className="h-10" />
       <div className="space-y-3 max-w-5xl">
         <p>
-          I strive to to think first, don&apos;t repeat myself and deliver great user experiences,
+          I strive to think first, don&apos;t repeat myself and deliver great user experiences,
           approaching the development with passion and creativity.
         </p>
         <p>
           I&apos;ve worked as a full stack developer for seven years now, learning dozens of tools and lessons along the way.
-          Provide new ideas, help other developers, and design clean interfaces are, besides coding, what I enjoy the most of my job.
+          Providing new ideas, helping other developers, and designing clean interfaces are, besides coding, what I enjoy the most of my job.
         </p>
       </div>
       <div className="absolute hidden lg:block -top-10 2xl:top-20 -right-2 2xl:-right-36 transform scale-90 2xl:scale-110 -rotate-6">
