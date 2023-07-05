@@ -32,7 +32,7 @@ export default function Presentation() {
           Provide new ideas, help other developers, and design clean interfaces are, besides coding, what I enjoy the most of my job.
         </p>
       </div>
-      <div className="absolute hidden lg:block -top-10 xl:top-20 -right-12 xl:-right-36 transform scale-110 -rotate-6">
+      <div className="absolute hidden lg:block -top-10 2xl:top-20 -right-2 2xl:-right-36 transform scale-90 2xl:scale-110 -rotate-6">
         <CreditCardDemo />
       </div>
     </div>

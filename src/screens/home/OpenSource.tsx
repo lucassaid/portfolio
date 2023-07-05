@@ -9,11 +9,11 @@ export default function OpenSourceProjects() {
           Open source projects
         </h2>
         <p className="max-w-3xl mx-auto">
-          Some components and libraries I made for the projects I worked on, and I wanted to share with the community.
-          The motivation for all of these was that I couldn&apos;t find something similar, so I think they have something new to offer.
+          Some components and libraries I abstracted from the projects I worked on, and I wanted to share with the community.
+          The motivation for all of these was that I couldn&apos;t find similar open-source solutions, so I think they have something new to offer.
         </p>
         <p>
-          Try them! All examples are interactive.
+          Try them out! All examples are interactive.
         </p>
       </div>
       <div className="container space-y-28">

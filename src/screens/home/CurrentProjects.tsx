@@ -3,10 +3,10 @@ import { mapSlugBackground, projects } from '../../data/projects/projects'
 
 export default function CurrentProjects() {
   return (
-    <div className="md:flex gap-x-14 gap-y-10 space-y-10 md:space-y-0 flex-wrap">
+    <div className="md:flex gap-x-14 gap-y-10 space-y-14 md:space-y-0 flex-wrap">
       {projects.map(project => (
         <div
-          className="space-y-2 w-5/12"
+          className="space-y-2 md:w-5/12"
           key={project.id}
         >
           <div className={`

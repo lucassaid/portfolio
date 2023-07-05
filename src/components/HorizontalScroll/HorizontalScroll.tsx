@@ -98,8 +98,6 @@ export default function HorizontalScroll({
     setScrollBar()
   }, [initialPlacement, initialZoom])
 
-
-
   const setScrollBar = () => {
     if (!contentRef.current || !scrollBarRef.current || !containerRef.current) return
     const contentWidth = contentRef.current.scrollWidth

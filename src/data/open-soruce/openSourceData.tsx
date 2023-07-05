@@ -90,7 +90,7 @@ export const openSourceProjects = [
     description: (
       <>
         <p>A headless component that allows the user to zoom in-out while scrolling. You can drag your mouse up and down to zoom in and out, while scrolling horizontally.</p>
-        <p>Could be used for large for apps with large horizontal containers, such as video edition apps or gantt charts. This library is under development and will be released soon.</p>
+        <p>Could be used for interfaces with large horizontal containers, such as video edition apps or gantt charts. This library is under development and will be released soon.</p>
         <p>Try it out! the example is interactive</p>
       </>
     ),

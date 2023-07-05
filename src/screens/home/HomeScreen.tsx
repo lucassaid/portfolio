@@ -8,6 +8,7 @@ import Point3dDemo from '../../components/Point3d/Point3dDemo'
 import Tools from './Tools'
 import { motion } from 'framer-motion'
 import { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 
 const leftForm = (
   <motion.div
@@ -74,8 +75,17 @@ export default function HomeScreen() {
           <div className="h-3" />
           <Tools />
         </div>
-        <div className="absolute top-72 -right-44 hidden 2xl:block">
+        <div className="absolute top-[32rem] right-10 hidden lg:block xl:right-0 2xl:-right-36 group">
           <Point3dDemo />
+          <div className="opacity-0 group-hover:opacity-100 absolute bottom-20 -left-48 w-64 transition-opacity text-sm z-50">
+            <Link
+              to="/project/cisem"
+              target=""
+              className="text-accent underline"
+            >
+              More about this project →
+            </Link>
+          </div>
         </div>
       </div>
       <div className="h-20" />
