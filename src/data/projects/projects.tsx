@@ -1,36 +1,56 @@
-import JulietaAmeliaLogo from './img/julieta-amelie.png'
+// import JulietaAmeliaLogo from './img/julieta-amelie.png'
 import OkNubeLogo from './img/oknube.svg'
 import FlashMeetLogo from './img/flash-meet.svg'
 import RitmoLogo from './img/ritmo.svg'
 import SpaceLogo from './img/space.svg'
 import CisemLogo from './img/cisem.svg'
-import Todo10Logo from './img/todo10.svg'
+// import Todo10Logo from './img/todo10.svg'
 import AldiaLogo from './img/aldia.svg'
+import AgendaLogo from './img/agenda.svg'
+import StemLogo from './img/stem.svg'
 import { Student } from 'phosphor-react'
 
 export const mapSlugBackground = {
-  spacedev: 'gradient-rose',
-  ritmo: 'gradient-emerald'
+  stem: 'gradient-emerald',
+  ritmo: 'gradient-rose',
+  agenda: 'bg-slate-100',
 }
 
 export const projects = [
   {
-    id: 'space',
-    slug: 'spacedev',
-    name: 'SpaceDev',
-    description: "Fresh and powerful software development company I'm currently working on. I work as a fullstack developer and a frontend referent.",
-    image: SpaceLogo,
+    id: 'stem',
+    slug: 'stem',
+    name: 'Stem',
+    description: 'My current and loved company, it is a global Leader in AI-driven Clean Energy Solutions and Services. I work as a frontend engineer, side by side with the BE team.',
+    image: StemLogo,
+    url: 'https://www.stem.com/',
   },
   {
     id: 'ritmo',
     slug: 'ritmo',
     name: 'Ritmo',
-    description: 'Sound branding startup running in Argentina, Uruguay and US. This is my side project, currently as a tech lead and associate of the company.',
+    description: 'Sound branding startup operating in Argentina, Uruguay and US. This is my side project, currently as a tech lead and associate of the company.',
     image: RitmoLogo,
+  },
+  {
+    id: 'agenda',
+    slug: 'agenda',
+    name: 'Headless Agenda',
+    description: 'My most recent open source project. Headless components for React that allow you to build your own Agenda. It has some cool features such dragging and resizing events!',
+    image: AgendaLogo,
+    url: 'https://www.npmjs.com/package/react-headless-agenda',
   },
 ]
 
 export const oldProjects = [
+  {
+    id: 'space',
+    slug: 'spacedev',
+    name: 'SpaceDev',
+    description: "Software development company I've worked as a fullstack developer and a frontend referent.",
+    image: SpaceLogo,
+    imageClassName: 'bg-[#7157bc] p-1 rounded-lg',
+  },
   {
     id: 'cisem',
     slug: 'cisem',
@@ -52,13 +72,13 @@ export const oldProjects = [
     description: "Personal project. It's an app to make video conferences without leaving the browser.",
     image: FlashMeetLogo,
   },
-  {
-    id: 'todo10',
-    name: 'Todo10',
-    url: 'https://todo10.com/en',
-    description: 'Website for a hosting company. It has nice animations and recursive logic also. (article coming soon)',
-    image: Todo10Logo,
-  },
+  // {
+  //   id: 'todo10',
+  //   name: 'Todo10',
+  //   url: 'https://todo10.com/en',
+  //   description: 'Website for a hosting company. It has nice animations and recursive logic also. (article coming soon)',
+  //   image: Todo10Logo,
+  // },
   {
     id: 'aldia',
     name: 'Al Día',

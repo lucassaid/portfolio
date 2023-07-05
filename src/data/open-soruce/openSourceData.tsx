@@ -16,7 +16,7 @@ export const openSourceProjects = [
     title: 'Headless agenda',
     description: (
       <>
-        <p>First-in-class agenda component for React. I provide all the functionality, markup and styles are up to you 😎</p>
+        <p>First-in-class agenda component for React. It provides all the functionality, leaving markup and styles up to you 😎</p>
         <p>Currently being used in production at <Link to="/project/ritmo">Ritmo</Link>, and I recently published it on NPM. Check out more:</p>
         <CodeLinks
           github="https://github.com/lucassaid/react-headless-agenda"
@@ -37,10 +37,10 @@ export const openSourceProjects = [
           You can write the name of a user to filter the list, and use the arrow keys to change the selection.
         </p>
         <p>
-          All markup and styles up to you (c&apos;mon it takes you 5 minutes using tailwind!)
+          All markup and styles up to you (because I am sure headless components are the future).
         </p>
         <p>
-          Currently being used in production in a chat app.
+          Currently being used in production in a chat app. I will release this soon as one of my open source projects.
         </p>
       </>
     ),
@@ -89,8 +89,9 @@ export const openSourceProjects = [
     title: 'Horizontal Scroll',
     description: (
       <>
-        <p>A headless component that allows the user to zoom in-out while scrolling. I couldn&apos;t find a suitable use for it yet.</p>
-        <p>Try it! the example is interactive</p>
+        <p>A headless component that allows the user to zoom in-out while scrolling. You can drag your mouse up and down to zoom in and out, while scrolling horizontally.</p>
+        <p>Could be used for large for apps with large horizontal containers, such as video edition apps or gantt charts. This library is under development and will be released soon.</p>
+        <p>Try it out! the example is interactive</p>
       </>
     ),
     example: <HorizontalScrollDemo />,

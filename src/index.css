@@ -96,6 +96,10 @@
     @apply bg-gradient-to-tr from-blue-400 to-blue-100
   }
 
+  .gradient-ritmo {
+    @apply bg-gradient-to-tr from-indigo-500 to-purple-400
+  }
+
   .article ul {
     @apply list-disc ml-6;
   }

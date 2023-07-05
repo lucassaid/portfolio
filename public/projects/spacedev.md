@@ -6,7 +6,7 @@ logo: '/images/project-logos/space.svg'
 
 ![space_team](/images/space_team.png)
 
-SpaceDev is a software factory company where I work as a fullstack developer. During this year and a half, I learned a lot, and worked on 4 exiting projects using React, React Native, Node.js, MongoDB, Firebase, and much more.
+SpaceDev is a software factory company where I work as a fullstack developer. During this year and a half, I learned a lot, and worked on 4 exciting projects using React, React Native, Node.js, MongoDB, Firebase, and much more.
 
 SpaceDev is also the company that helped me to move from Argentina to Uruguay, the country I currently live in. Full of honest and energetic people from whom I learn a lot.
 

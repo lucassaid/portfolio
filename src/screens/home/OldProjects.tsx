@@ -12,7 +12,10 @@ export default function OldProjects() {
           {project.image ? (
             <img
               src={project.image}
-              className="w-16 flex-shrink-0 h-16"
+              className={`
+                w-16 flex-shrink-0 h-16
+                ${project.imageClassName || ''}  
+              `}
             />
           ) : null}
           {project.icon ? project.icon : null}

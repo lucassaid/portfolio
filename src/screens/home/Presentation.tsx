@@ -24,13 +24,12 @@ export default function Presentation() {
       <div className="h-10" />
       <div className="space-y-3 max-w-5xl">
         <p>
-          I always try to think first, don&apos;t repeat myself and deliver good user experiences,
-          facing the development with passion and creativity. I love to bring new ideas to the projects I work on.
+          I strive to to think first, don&apos;t repeat myself and deliver great user experiences,
+          approaching the development with passion and creativity.
         </p>
         <p>
-          I&apos;ve worked as a full stack developer for around 6 years now, but lately I&apos;m focusing on <b>frontend development</b>.
-          I&apos;m improving my skills and specializing in what I&apos;m good at: Draft quality, composable components,
-          and building great user interfaces.
+          I&apos;ve worked as a full stack developer for seven years now, learning dozens of tools and lessons along the way.
+          Provide new ideas, help other developers, and design clean interfaces are, besides coding, what I enjoy the most of my job.
         </p>
       </div>
       <div className="absolute hidden lg:block -top-10 xl:top-20 -right-12 xl:-right-36 transform scale-110 -rotate-6">
