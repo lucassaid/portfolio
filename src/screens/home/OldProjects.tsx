@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { oldProjects } from '../../data/projects/projects'
+import { ArrowSquareOut } from 'phosphor-react'
 
 export default function OldProjects() {
   return (
@@ -31,15 +32,17 @@ export default function OldProjects() {
                   target=""
                   className="text-accent"
                 >
-                  See more →
+                  Read article →
                 </Link>
               ) : (
                 <a
                   target="_blank"
                   href={project.url}
                   rel="noreferrer"
+                  className="flex items-center gap-x-1"
                 >
-                  See website →
+                  See website
+                  <ArrowSquareOut />
                 </a>
               )}
             </div>

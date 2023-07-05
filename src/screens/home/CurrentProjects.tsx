@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { mapSlugBackground, projects } from '../../data/projects/projects'
+import { ArrowSquareOut } from 'phosphor-react'
 
 export default function CurrentProjects() {
   return (
@@ -31,15 +32,17 @@ export default function CurrentProjects() {
                 target="_blank"
                 href={project.url}
                 rel="noreferrer"
+                className="flex items-center gap-x-1"
               >
-                See more →
+                See website
+                <ArrowSquareOut />
               </a>
             ) : (
               <Link
                 to={`/project/${project.slug}`}
                 className="text-accent"
               >
-                See more →
+                Read article →
               </Link>
             )}
           </div>
