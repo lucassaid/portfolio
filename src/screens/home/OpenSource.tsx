@@ -1,4 +1,6 @@
+import { tweenToTop } from '../../components/Section'
 import { openSourceProjects } from '../../data/open-soruce/openSourceData'
+import { motion } from 'framer-motion'
 
 export default function OpenSourceProjects() {
 
@@ -16,15 +18,16 @@ export default function OpenSourceProjects() {
           Try them out! All examples are interactive.
         </p>
       </div>
-      <div className="container space-y-28">
+      <div className="container space-y-40">
         {openSourceProjects.map((projectInfo, i) => (
-          <div
+          <motion.div
             key={projectInfo.id}
             className={`
               lg:flex gap-10 space-y-6 lg:space-y-0
               ${i % 2 !== 0 ? 'flex-row-reverse' : ''}
               ${projectInfo.rowClass || 'items-center'}
             `}
+            {...tweenToTop}
           >
             <div className="lg:w-6/12">
               {projectInfo.example}
@@ -41,7 +44,7 @@ export default function OpenSourceProjects() {
                 {projectInfo.description}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </>

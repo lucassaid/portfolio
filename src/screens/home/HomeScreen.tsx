@@ -9,6 +9,7 @@ import Tools from './Tools'
 import { motion } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import Section from '../../components/Section'
 
 const leftForm = (
   <motion.div
@@ -18,15 +19,41 @@ const leftForm = (
     `}
     style={{
       scale: 3,
+      mixBlendMode: 'difference',
     }}
     animate={{
       rotate: [30, 120, 30],
     }}
     transition={{
       repeat: Infinity,
-      duration: 30
+      duration: 20
     }}
   />
+)
+
+const point3dDemo = (
+  <motion.div
+    className="absolute top-[28rem] hidden lg:block right-10 xl:right-20 2xl:-right-20 group"
+    transition={{
+      bounce: 0.5,
+      type: 'spring',
+      duration: 3,
+    }}
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: '-50px' }}
+  >
+    <Point3dDemo />
+    <div className="opacity-0 group-hover:opacity-100 absolute bottom-20 -left-48 w-64 transition-opacity text-sm z-50">
+      <Link
+        to="/project/cisem"
+        target=""
+        className="text-accent underline"
+      >
+        More about this project →
+      </Link>
+    </div>
+  </motion.div>
 )
 
 export default function HomeScreen() {
@@ -59,45 +86,39 @@ export default function HomeScreen() {
           What I&apos;m working on
         </h2>
         <CurrentProjects />
-        <div className="h-20" />
-        <h2 className="mb-10">
-          Previous projects
-        </h2>
-        <OldProjects />
-        <div className="h-20" />
-        <div className="space-y-3">
-          <h2 className="">
-            Tech I&apos;m used to
-          </h2>
-          <p>
-            Hover or tap on each one to see more details.
-          </p>
-          <div className="h-3" />
-          <Tools />
-        </div>
-        <div className="absolute top-[32rem] right-10 hidden lg:block xl:right-0 2xl:-right-36 group">
-          <Point3dDemo />
-          <div className="opacity-0 group-hover:opacity-100 absolute bottom-20 -left-48 w-64 transition-opacity text-sm z-50">
-            <Link
-              to="/project/cisem"
-              target=""
-              className="text-accent underline"
-            >
-              More about this project →
-            </Link>
-          </div>
-        </div>
+        {point3dDemo}
       </div>
       <div className="h-20" />
+      <div className="bg-slate-100 py-20 z-50 relative">
+        <Section className="container relative">
+          <h2 className="mb-10">
+            Previous projects
+          </h2>
+          <OldProjects />
+        </Section>
+      </div>
+      <div className="h-20" />
+      <Section className="container relative">
+        <h2>
+          Tech I&apos;m used to
+        </h2>
+        <div className="h-3" />
+        <p>
+          Hover or tap on each one to see more details.
+        </p>
+        <div className="h-6" />
+        <Tools />
+      </Section>
+      <div className="h-20" />
       <div className="h-10" />
-      <div className="bg-gradient-to-bl from-sky-900 to-slate-900  py-20 text-white">
+      <Section className="bg-gradient-to-bl from-sky-900 to-slate-900  py-20 text-white">
         <div className="h-10" />
         <OpenSourceProjects />
         <div className="h-10" />
-      </div>
+      </Section>
       <div className="h-20" />
       <div className="h-10" />
-      <div className="container">
+      <Section className="container">
         <div className="md:flex items-center">
           <div className="md:w-5/12 flex justify-center">
             <CompassDemo />
@@ -109,7 +130,7 @@ export default function HomeScreen() {
             {strings.aboutMe}
           </div>
         </div>
-      </div>
+      </Section>
       <div className="h-20" />
       <div className="h-10" />
     </div>

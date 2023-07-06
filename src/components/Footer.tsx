@@ -11,7 +11,7 @@ export default function Footer() {
           Analytical and self-critical, lover of cats and coffee.
         </p>
       </div>
-      <hr className="border-slate-400" />
+      <hr className="border-slate-300" />
       <div className="space-y-1 mt-4">
         <a
           className="flex items-center gap-2"

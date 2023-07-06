@@ -32,7 +32,7 @@ export default function SpeedometerDemo() {
   const [marksStep, setMarksStep] = useState(10)
 
   const sliders = (
-    <div className="relative w-16 text-sm space-y-1 transition-all duration-300 opacity-0 group-hover:opacity-100 group-focus:opacity-100">
+    <div className="relative w-16 text-sm space-y-1 transition-all duration-300 opacity-30 group-hover:opacity-100 group-focus:opacity-100">
       <ValuesSetter
         values={values}
         setValues={setValues}
@@ -66,7 +66,7 @@ export default function SpeedometerDemo() {
   )
 
   const checkboxes = (
-    <div className="hidden sm:block space-y-2 text-slate-400 right-8 opacity-0 transition-all duration-300 group-hover:opacity-100">
+    <div className="hidden sm:block space-y-2 text-slate-400 right-8 opacity-30 transition-all duration-300 group-hover:opacity-100">
       <Checkboxes
         items={items}
         setItems={setItems}

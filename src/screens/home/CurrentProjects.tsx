@@ -4,7 +4,7 @@ import { ArrowSquareOut } from 'phosphor-react'
 
 export default function CurrentProjects() {
   return (
-    <div className="md:flex gap-x-14 gap-y-10 space-y-14 md:space-y-0 flex-wrap">
+    <div className="md:flex gap-x-14 gap-y-10 space-y-14 md:space-y-0 flex-wrap" >
       {projects.map(project => (
         <div
           className="space-y-2 md:w-5/12"

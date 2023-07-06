@@ -25,7 +25,7 @@ export default function Layout() {
   return (
     <div className="text-lg text-slate-800">
       <Outlet />
-      <div className="bg-slate-300 py-10">
+      <div className="bg-slate-100 py-10">
         <Footer />
       </div>
     </div>

@@ -1,5 +1,6 @@
 import CreditCardDemo from '../../components/CreditCard/CreditCardDemo'
 import profileImage from './profile.jpg'
+import { motion } from 'framer-motion'
 
 export default function Presentation() {
 
@@ -32,9 +33,18 @@ export default function Presentation() {
           Providing new ideas, helping other developers, and designing clean interfaces are, besides coding, what I enjoy the most of my job.
         </p>
       </div>
-      <div className="absolute hidden lg:block -top-10 2xl:top-20 -right-2 2xl:-right-36 transform scale-90 2xl:scale-110 -rotate-6">
+      <motion.div
+        className="absolute hidden lg:block -top-10 2xl:top-20 -right-2 2xl:-right-36 transform scale-90 2xl:scale-110"
+        transition={{
+          bounce: 0.5,
+          type: 'spring',
+          duration: 3,
+        }}
+        initial={{ opacity: 0, y: 50, rotate: 2 }}
+        animate={{ opacity: 1, y: 0, rotate: -6 }}
+      >
         <CreditCardDemo />
-      </div>
-    </div>
+      </motion.div>
+    </div >
   )
 }
