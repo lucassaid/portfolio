@@ -49,4 +49,4 @@ All the connection with the frontend is made with Socket.io, making it easy to l
 
 ## More (was) coming soon
 
-I was working to make the app more stable and compatible, to add features such as polls, screen sharing and file sharing. But, since apps like google meet already had everything I was trying to accomplish, I decided to abandon the project. So long Flash, you'll never get to beat your rival Zoom 👊. (If you haven't seen the tv shows or the comics please ignore this bad joke and forgive me)
+I was working to make the app more stable and compatible, to add features such as polls, screen sharing and file sharing. But, since apps like google meet already had everything I was trying to accomplish, I decided to abandon the project. So long Flash, you'll never get to beat Zoom 👊. (please ignore this bad joke and forgive me)
