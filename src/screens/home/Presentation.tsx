@@ -38,10 +38,10 @@ export default function Presentation() {
         transition={{
           bounce: 0.5,
           type: 'spring',
-          duration: 3,
+          duration: 2,
         }}
-        initial={{ opacity: 0, y: 50, rotate: 2 }}
-        animate={{ opacity: 1, y: 0, rotate: -6 }}
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
       >
         <CreditCardDemo />
       </motion.div>

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import CreditCard from './CreditCard'
 import useTyped from './useTyped'
+import { motion } from 'framer-motion'
 
 const sleep = (ms: number) => new Promise(res => setTimeout(res, ms))
 
@@ -47,12 +48,23 @@ export default function CreditCardDemo() {
   }, [play])
 
   return (
-    <CreditCard
-      number={number}
-      flipped={flipped}
-      name="Lucas Said"
-      vDate="06/30"
-      code={code}
-    />
+    <motion.div
+      transition={{
+        bounce: 0.5,
+        type: 'spring',
+        duration: 2,
+      }}
+      animate={{
+        rotate: flipped ? 6 : -6,
+      }}
+    >
+      <CreditCard
+        number={number}
+        flipped={flipped}
+        name="Lucas Said"
+        vDate="06/30"
+        code={code}
+      />
+    </motion.div>
   )
 }
