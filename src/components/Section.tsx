@@ -23,7 +23,7 @@ export const tweenToTop: ComponentProps<typeof motion.div> = {
   variants: sectionVariants,
   initial: 'initial',
   whileInView: 'visible',
-  viewport: { once: true, margin: '-40px' },
+  viewport: { once: true },
   transition: sectionTransition,
 }
 
